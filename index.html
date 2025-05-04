@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <div class="flex flex-row items-center justify-center min-h-screen bg-gray-100">
+        <div class="w-[40%] h-screen bg-gray-500">
+            <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-full w-full object-cover">
+        </div>
+        <div class="w-[60%] bg-white-500 flex flex-col">
+            <form action="post">
+                <div class="flex flex-col items-center justify-center h-screen">
+                    <h1 class="text-3xl font-bold text-black">Sign Up</h1>
+                    <div class="mt-4">
+                        <input type="text" name="username" placeholder="Username" class="p-2 rounded-md w-80 border border-black" required>
+                    </div>
+                    <div class="mt-4">
+                        <input type="email" name="email" placeholder="Email" class="p-2 rounded-md w-80 border border-black" required>
+                    </div>
+                    <div class="mt-4">
+                        <input type="password" name="password" placeholder="Password" class="p-2 rounded-md w-80 border border-black" required>
+                    </div>
+                    <div class="mt-4">
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password" class="p-2 rounded-md w-80 border border-black" required>
+                    </div>
+                    <button type="submit" class="mt-4 bg-white text-black-500 p-2 rounded-md w-80 ">Sign Up</button>
+                    <div class="mt-6"> 
+                        <h2>Already have an account? <a href="/login" class="text-blue underline">Login</a></h2>
+                    </div>
+                </div>   
+            </form>
+           
+        </div>
+    </div>
 </body>
 </html>
